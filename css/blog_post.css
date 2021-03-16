@@ -1,43 +1,79 @@
-.mainAreaBlog{display:grid;}
-.blog_post{display: grid;
-grid-template-columns: 1fr;}
+.mainAreaBlog {
+  display: grid;
+}
+.blog_post {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
-.right_area{display: grid;
-grid-template-columns: 1fr;}
+.blog_post h2 {
+  font-weight: 700;
+  color: brown;
+  font-size: 20px;
+}
 
-#blog_post_info{display: block;}
+.right_area {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
-.emph{font-weight: 700;}
+#blog_post_info {
+  display: block;
+}
+
+.emph {
+  font-weight: 700;
+}
+
+blockquote {
+  font-size: 22px;
+  color: #444;
+  border-left: 14px solid #444;
+  padding: 3em;
+  line-height: 3em;
+  display: block;
+  text-align: center;
+  font-weight: 900;
+  clear: both;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
- 
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    }
-
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .mainAreaBlog {
+    grid-template-columns: 75% 25%;
 
-    .mainAreaBlog{grid-template-columns: 75% 25%;
-        
-        grid-template-rows:minmax(1fr,auto);
-        grid-template-areas: "main_post main_post right_top";}
-        
+    grid-template-rows: minmax(1fr, auto);
+    grid-template-areas: "main_post main_post right_top";
+  }
 
-    .blog_post{grid-area: main_post;}
-    .right_area{grid-area: right_top;}
+  .blog_post {
+    grid-area: main_post;
+  }
+  .right_area {
+    grid-area: right_top;
+  }
 
-    #blog_post_info{display: flex; justify-content: space-around; align-items: flex-start;}
-    /*#blogger_info{width: 40%;}
+  #blog_post_info {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  /*#blogger_info{width: 40%;}
     #social_share{width: 40%;}*/
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}

@@ -1,27 +1,62 @@
-#main_nav > ul {list-style: none;  margin-top: 10px;}
-#main_nav > ul > li{padding: 10px;}
+#main_nav > ul {
+  list-style: none;
+  margin-top: 10px;
+}
+#main_nav > ul > li {
+  padding: 10px;
+}
 
-nav{ height: 80px;
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 0 40px 0 40px;}
-nav ul{display: flex; list-style: none; flex-direction: column;}
-nav ul li{margin-right: 10px;}
+nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px 0 40px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+}
+nav ul li {
+  margin-right: 10px;
+}
 
-#main_nav ul li{font-family: coquette, sans-serif;font-weight: 200;font-style: normal;}
-#main_nav ul li a:link{color: chocolate;}
-#main_nav ul li a:hover{color: #fff;}
+#main_nav ul li {
+  font-family: coquette, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+#main_nav ul li a:link {
+  color: chocolate;
+}
+#main_nav ul li a:hover {
+  color: #fff;
+}
 /*#main_nav ul li a:visited{color: chocolate;}*/
 /*#main_nav ul li a:active{color:#fff;}*/
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    #main_nav > ul {list-style: none; display: flex;}
-    #main_nav > ul > li{padding: 10px;}
+  #main_nav > ul {
+    list-style: none;
+    display: flex;
+  }
+  #main_nav > ul > li {
+    padding: 10px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    #main_nav > ul {list-style: none; display: flex;}
-    #main_nav > ul > li{padding: 10px;}
-    nav ul{flex-direction: row;}
+  #main_nav > ul {
+    list-style: none;
+    display: flex;
+  }
+  #main_nav > ul > li {
+    padding: 10px;
+  }
+  nav ul {
+    flex-direction: row;
+  }
 }
