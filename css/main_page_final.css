@@ -1,0 +1,81 @@
+body{margin: 0;}
+
+#logo{font-family: coquette, sans-serif;font-weight: 900;font-style: normal;}
+
+a:link{color: #fff; text-decoration: none;}
+a:hover{color: #fff;}
+a:visited{color: #fff;}
+
+
+.container{display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 40px;
+    grid-template-areas: "hd" "main" "ft";
+}
+
+.nestedGrid{display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(1fr, auto);
+    grid-template-areas: "top_area"
+    "main_post"
+    "blog_name";
+}
+
+.box{/*border: 1px solid #000;*/ display: flex; justify-content: center; align-items: center;}
+
+#blog_description{display: block; padding: 20px; text-align: justify;}
+
+.nestedGrid h2 a:link{color: #fff; font-size: 20px;}
+
+header{background-color: burlywood;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 280px;}
+
+footer{background-color: coral; display: flex; justify-content: center; align-items: center;border-top:2px dotted rgb(90, 44, 0);
+color: #fff;font-family: source-code-pro, monospace;}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #welcome{grid-area:top_area;}
+    #featuredPost{grid-area: main_post;}
+    #blogName{grid-area:blog_name;}
+    #theBlog{display: none;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .container{display: grid;
+         grid-template-rows: 80px 1fr 40px;
+    }
+
+    .nestedGrid{grid-template-columns: repeat(3,1fr);
+        grid-template-rows:minmax(1fr,auto);
+        grid-template-areas: "main_post main_post right_top"
+        "middle_left middle_center middle_right"
+        "bottom_left bottom_middle bottom_right";}
+        #featuredPost{grid-area: main_post;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .nestedGrid{grid-template-columns: repeat(3,1fr);
+    grid-template-rows:minmax(1fr,auto);
+    grid-template-areas: "main_post main_post right_top"
+    "middle_left middle_center middle_right"
+    "bottom_left bottom_middle bottom_right";}
+    #featuredPost{grid-area: main_post;}
+    header{height: 80px;}
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

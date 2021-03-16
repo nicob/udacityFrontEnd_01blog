@@ -1,0 +1,41 @@
+.choco{background-color: #fff;}
+.nestedGrid_all{display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(1fr, auto);
+    grid-template-areas: "page_title" "top_area" "main_post" "blog_name";
+}
+
+#page_title{font-family: gothic-open-shaded, sans-serif; font-weight: 400; font-style: normal; color: rgba(247, 247, 247, 0.959); font-size: 24px; text-align: center;
+background-color: chocolate; padding-top: 20px; grid-area: page_title;border-bottom: 1px dotted rgb(90, 44, 0);}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+   
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .nestedGrid_all{grid-template-columns: repeat(3,1fr);
+        grid-template-rows:minmax(1fr,auto);
+        grid-template-areas: "page_title page_title page_title" "top_left top_middle right_top"
+        "middle_left middle_center middle_right"
+        "bottom_left bottom_middle bottom_right";}
+        #page_title{height: 40px;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .nestedGrid_all{grid-template-columns: repeat(3,1fr);
+    grid-template-rows:minmax(1fr,auto);
+    grid-template-areas: "page_title page_title page_title" "top_left top_middle right_top"
+    "middle_left middle_center middle_right"
+    "bottom_left bottom_middle bottom_right";}
+    header{height: 80px;}
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

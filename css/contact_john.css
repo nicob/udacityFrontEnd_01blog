@@ -1,0 +1,19 @@
+#contact_form{display: flex;}
+#contact_form ul{list-style: none;}
+#contact_form ul li{align-items: stretch; margin:20px;}
+#the_contact_form label{display: block;}
+#the_contact_form input{min-width: 250px;}
+#the_contact_form textarea{min-width: 350px; min-height: 200px;}
+
+#the_contact_form .submit_form {
+    background-color: #555; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
