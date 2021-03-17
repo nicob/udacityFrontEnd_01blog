@@ -17,3 +17,13 @@ Quotes :x:
 
 -Code formatting
 Applied 'prettier formatting' on the code (html and css files)
+
+
+---------------------------------------------------------------------REVIEW02-------------------------------------
+index.html
+Added <main> tag would be more semantic here.
+Added <article> tags in the cards that refer to blog posts. Using a <div> for non blog post cards 
+Added description text and button in the card (using a bakgroud image)
+  
+contact_john.html
+Removed the style from the .html file and applied it through a .css file
