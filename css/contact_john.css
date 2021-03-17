@@ -31,3 +31,10 @@
   margin: 4px 2px;
   cursor: pointer;
 }
+
+.contact_box {
+  background-image: url("../assets/images/contact_john_1100x250.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

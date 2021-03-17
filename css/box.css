@@ -61,7 +61,7 @@
   font-weight: lighter;
   font-style: normal;
   color: #fff;
-  font-size: 16px;
+  font-size: 24px;
 }
 .post_title a:visited {
   color: rgb(238, 237, 237);
@@ -116,7 +116,10 @@
   font-weight: 600;
 }
 
-.right_float{float: right !important; margin: 0 0 0 10px !important;}
+.right_float {
+  float: right !important;
+  margin: 0 0 0 10px !important;
+}
 
 #blog_description figcaption {
   text-align: center;
@@ -184,7 +187,7 @@
 #social_share {
   display: flex;
   flex-direction: column;
-  color: rgb(255, 172, 17)!important;
+  color: rgb(255, 172, 17) !important;
   top: 0;
 }
 #social_share ul {
@@ -203,6 +206,42 @@
   color: rgb(255, 172, 17);
 }
 
+.box_button {
+  background-color: #ad8b86;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 16px !important;
+  padding: 6px 15px;
+  text-decoration: none;
+  font-family: source-code-pro, monospace !important;
+}
+.box_button:hover {
+  background-color: #bd9894;
+}
+.box_button:active {
+  position: relative;
+  top: 1px;
+}
+
+.post_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2px;
+}
+
+.post_intro {
+  font-family: source-code-pro, monospace;
+  color: #500000;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 }
@@ -213,10 +252,10 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 40.4%;
-    height: 25.4%;
+    width: 80.4%;
+    height: 80.4%;
     backdrop-filter: blur(1px);
-    background-color: rgba(170, 202, 235, 0.4);
+    background-color: rgba(170, 202, 235, 0.7);
   }
   .post_title a:link {
     font-size: 25px;
@@ -228,5 +267,19 @@
   }
   .mask-box-description .post_title {
     font-size: 25px;
+  }
+
+  .post_title {
+    padding: 10px;
+  }
+
+  .post_intro {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .box_button {
+    font-size: 15px !important;
+    padding: 3px 6px;
   }
 }
